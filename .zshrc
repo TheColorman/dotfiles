@@ -130,3 +130,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # github.com/nvbn/thefuck
 eval $(thefuck --alias fuck)
+
+# git
+export GPG_TTY=$(tty)
