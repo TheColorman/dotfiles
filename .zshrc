@@ -122,7 +122,6 @@ alias grep='grep --color=auto'
 
 # bin shorthands
 alias chrome='google-chrome-stable --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto'
-alias code='code --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto'
 alias disc='vencord-desktop'
 
 # dotfiles
@@ -133,3 +132,7 @@ eval $(thefuck --alias fuck)
 
 # git
 export GPG_TTY=$(tty)
+
+# custom binds
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
