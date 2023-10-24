@@ -136,3 +136,9 @@ export GPG_TTY=$(tty)
 # custom binds
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
+
+# psql go brrr
+alias psql='psql -U postgres -h 192.168.50.222 -p 22065'
+
+# alias overwrite
+alias tldr='/usr/bin/tldr'
