@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+   export EDITOR='vim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -138,7 +138,20 @@ bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 
 # psql go brrr
-alias psql='psql -U postgres -h 192.168.50.222 -p 22065'
+alias _psql='psql -U postgres -h 192.168.50.222 -p 22065'
 
 # alias overwrite
 alias tldr='/usr/bin/tldr'
+
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+alias icat='kitten icat'
+
+alias codi='code-insiders --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto'
+
+alias pacls='pacman -Q'
+alias pacll='pacman -Ql'
+alias nano='vim'
+alias Hypr='dbus-run-session Hyprland'
+
+export EDITOR='vim'
+export VISUAL='vim'
