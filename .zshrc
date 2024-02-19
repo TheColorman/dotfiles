@@ -75,7 +75,6 @@ plugins=(
 	aliases
 	archlinux
 	battery
-	colorize
 	command-not-found
 	common-aliases
 	gh
@@ -95,14 +94,6 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-export EDITOR='nano'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -137,9 +128,6 @@ export GPG_TTY=$(tty)
 bindkey '^H' backward-kill-word
 bindkey '5~' kill-word
 
-# psql go brrr
-alias _psql='psql -U postgres -h 192.168.50.222 -p 22065'
-
 # alias overwrite
 alias tldr='/usr/bin/tldr'
 
@@ -171,3 +159,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# zoxide
+eval "$(zoxide init --cmd cd zsh)"
