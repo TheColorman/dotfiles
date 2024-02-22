@@ -161,5 +161,4 @@ unset __conda_setup
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)"
-# felix
-alias fx='felix'
+export PATH="$HOME/go/bin:$HOME/bin:$HOME/.local/bin:$PATH"
